@@ -29,4 +29,7 @@ describe (Task) {
       expect(Task.all).to(eq([]))
     }
   }
+  before() {
+    Task.clear()
+  }
 }
