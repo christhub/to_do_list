@@ -15,3 +15,10 @@ describe ('.all') {
     expect(Task.all).to(eq([]))
   }
 }
+describe ('#save') {
+  it ("adds a task to the array of saved tasks") {
+      new_task = Task.new("water the cactus")
+      new_task.save()
+      expect(Task.all()).to(eq([new_task]))
+    }
+}
