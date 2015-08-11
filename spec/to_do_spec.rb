@@ -9,3 +9,9 @@ describe (Task) {
     }
   }
 }
+
+describe ('.all') {
+  it ("is empty at first") {
+    expect(Task.all).to(eq([]))
+  }
+}
